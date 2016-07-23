@@ -1,0 +1,30 @@
+<html>
+	<meta>
+	</meta>
+	<title>
+		{% block title%}
+		{% endblock title%}
+	</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	<link rel="stylesheet" href="templates/sticky-footer.css">
+	
+	<body height="520px">
+		<nav>
+		    <div class="nav-wrapper">
+		      <a href="#" class="brand-logo right">Logo</a>
+		      <ul id="nav-mobile" class="left hide-on-med-and-down">
+		        <li><a href="#">Sass</a></li>
+		        <li><a href="#">Components</a></li>
+		        <li><a href="#">JavaScript</a></li>
+		      </ul>
+		    </div>
+	 	</nav>
+		<div align="center">
+			{% block content %}
+			{% endblock content %}
+		</div>
+		{% block footer %}
+		{% endblock footer %}
+	</body>
+</html>
+
